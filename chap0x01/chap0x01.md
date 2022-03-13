@@ -73,7 +73,7 @@
 
    输入`ip a`查询当前网络情况
 
-   ![](img\ip a.png)
+   ![](img\ip_a.png)
 
    发现两块网卡都正常工作，在ubuntu20.04.02中不需要再单独配置网卡。
 
@@ -85,7 +85,7 @@
 
         在windows主机上创建一个test.txt文件作为测试，使用scp将这个文件传输到虚拟机中，使用命令`scp C:\Users\22487\Desktop\test.txt deng@192.168.88.131:/home/deng/others`
 
-        ![](img\scp to vm.png)
+        ![](img\scp_to_vm.png)
 
         在虚拟机中查看一下，使用`sudo vim others`即可查看others文件
 
@@ -95,11 +95,11 @@
 
         传输文件夹要使用递归复制整个目录。需要使用`scp -r`命令，先在windows主机上建立一个test文件夹 ，使用命令`scp -r C:\Users\22487\Desktop\test deng@192.168.88.131:/home/deng/test`
 
-        ![](img\scp-r to vm.png)
+        ![](img\scp-r_to_vm.png)
 
         在虚拟机中查看一下，使用命令`ls -lR test`
 
-        ![](img\ls test.png)
+        ![](img\ls_test.png)
 
         发现已经全部传输进虚拟机了。
 
@@ -111,7 +111,7 @@
 
         `scp C:\Users\22487\Desktop\test.txt root@101.133.149.174:/root/others `
 
-        ![](img\scp to aliyun.png)
+        ![](img\scp_to_aliyun.png)
 
         同样在虚拟机中查看一下，使用命令`sudo vim others`
 
@@ -123,11 +123,11 @@
 
         `scp -r C:\Users\22487\Desktop\test root@101.133.149.174:/root/test `
 
-        ![](img\scp-r to aliyun.png)
+        ![](img\scp-r_to_aliyun.png)
 
         在虚拟机中查看一下，使用命令`ls -lR test`
 
-        ![](img\ls test_aliyun.png)
+        ![](img\ls_test_aliyun.png)
 
         已经全部传输到虚拟机上了。
 
