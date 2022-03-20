@@ -4,9 +4,9 @@
 
 ### 使用表格方式记录至少 2 个不同 Linux 发行版本上以下信息的获取方法，使用 [asciinema](https://asciinema.org/) 录屏方式「分段」记录相关信息的获取过程和结果
 
-* ####【软件包管理】在目标发行版上安装 `tmux` 和 `tshark` ；查看这 2 个软件被安装到哪些路径；卸载 `tshark` ；验证 `tshark` 卸载结果
+* #### 【软件包管理】在目标发行版上安装 `tmux` 和 `tshark` ；查看这 2 个软件被安装到哪些路径；卸载 `tshark` ；验证 `tshark` 卸载结果
 
-* ####【文件管理】复制以下 `shell` 代码到终端运行，在目标 Linux 发行版系统中构造测试数据集，然后回答以下问题： 
+* #### 【文件管理】复制以下 `shell` 代码到终端运行，在目标 Linux 发行版系统中构造测试数据集，然后回答以下问题： 
 
   * **找到 `/tmp` 目录及其所有子目录下，文件名包含 `666` 的所有文件**
   * **找到 `/tmp` 目录及其所有子目录下，文件内容包含 `666` 的所有文件**
@@ -17,9 +17,9 @@
 
 * #### 【文件压缩与解压缩】练习课件中 [文件压缩与解压缩](https://c4pr1c3.github.io/LinuxSysAdmin/chap0x02.md.html#/12/1) 一节所有提到的压缩与解压缩命令的使用方法
 
-* ####【跟练】 [子进程管理实验](https://asciinema.org/a/f3ux5ogwbxwo2q0wxxd0hmn54)
+* #### 【跟练】 [子进程管理实验](https://asciinema.org/a/f3ux5ogwbxwo2q0wxxd0hmn54)
 
-* ####【硬件信息获取】目标系统的 CPU、内存大小、硬盘数量与硬盘容量
+* #### 【硬件信息获取】目标系统的 CPU、内存大小、硬盘数量与硬盘容量
 
 ## 实验环境
 
@@ -30,7 +30,7 @@
 
 ## 问题解答
 
-1. ####【软件包管理】在目标发行版上安装 `tmux` 和 `tshark` ；查看这 2 个软件被安装到哪些路径；卸载 `tshark` ；验证 `tshark` 卸载结果
+1. #### 【软件包管理】在目标发行版上安装 `tmux` 和 `tshark` ；查看这 2 个软件被安装到哪些路径；卸载 `tshark` ；验证 `tshark` 卸载结果
 
    * ##### Ubuntu 20.04.2 LTS
 
@@ -191,7 +191,7 @@
 
       [![file manage on kali](https://asciinema.org/a/5UgOO5cbXuEEwPCoO4AXBgCBO.svg)](https://asciinema.org/a/5UgOO5cbXuEEwPCoO4AXBgCBO)
 
-3. ####【文件压缩与解压缩】练习课件中 [文件压缩与解压缩](https://c4pr1c3.github.io/LinuxSysAdmin/chap0x02.md.html#/12/1) 一节所有提到的压缩与解压缩命令的使用方法
+3. #### 【文件压缩与解压缩】练习课件中 [文件压缩与解压缩](https://c4pr1c3.github.io/LinuxSysAdmin/chap0x02.md.html#/12/1) 一节所有提到的压缩与解压缩命令的使用方法
 
    1. **Ubuntu 20.04.2 LTS**
 
@@ -226,7 +226,7 @@
 
       [![ping on kali](https://asciinema.org/a/70EzHK93uA5NVa8lL6RJMI4xA.svg)](https://asciinema.org/a/70EzHK93uA5NVa8lL6RJMI4xA)
 
-5. ####【硬件信息获取】目标系统的 CPU、内存大小、硬盘数量与硬盘容量
+5. #### 【硬件信息获取】目标系统的 CPU、内存大小、硬盘数量与硬盘容量
 
    `lshw`可以显示详细的硬件信息，使用`lshw -short`可以通过概要的方式显示硬件信息
 
