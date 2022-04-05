@@ -22,9 +22,9 @@
 
 ## 问题解答
 
-1. ###[Systemd 入门教程：命令篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+1. ### [Systemd 入门教程：命令篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
 
-   1. ####系统管理
+   1. #### 系统管理
 
       1. **systemctl**
 
@@ -803,7 +803,7 @@
 
       Target 也有自己的配置文件。 
 
-      ![target](img\target.png)
+      ![target](img/target.png)
 
       注意，Target 配置文件里面没有启动命令。
 
@@ -879,11 +879,11 @@
 
       首先在VMware Workstation打开共享文件
 
-      ![share](img\share.png)
+      ![share](img/share.png)
 
       在`/mnt`路径下创建`share`文件夹
 
-      ![mkdir_share](img\mkdir_share.png)
+      ![mkdir_share](img/mkdir_share.png)
 
       接着修改`/etc/fstab`文件，在文件末尾加上
 
@@ -910,11 +910,11 @@
 
       首先创建一个`shell`脚本`online.sh`，具体内容如下
 
-      ![online.sh](img\online.png)
+      ![online.sh](img/online.png)
 
       接着在`/etc/systemd/system`路径下创建`online_do_something.service`，并配置这个文件，如下图
 
-      ![online-do-something](img\online-do-something.png)
+      ![online-do-something](img/online-do-something.png)
 
       ```bash
       [Unit]
@@ -938,7 +938,7 @@
 
       让这个服务开机自启，重启之后就可以看到它可以成功运行了
 
-      ![start-test-network](img\start-test-network.png)
+      ![start-test-network](img/start-test-network.png)
 
       对于在网络断开时运行另一个脚本，同样也创建一个`offline.sh`便于观察运行状况。需要在`/etc/systemd/system/online_do_something.service`添加一句话即可
 
@@ -946,7 +946,7 @@
       ExecStopPost=/bin/bash -e /home/deng/offline.sh
       ```
 
-      ![offline_do_somthing.png](img\offline_do_somthing.png)
+      ![offline_do_somthing.png](img/offline_do_somthing.png)
 
       添加好后重启设备，接着使用命令
 
@@ -956,7 +956,7 @@
 
       停止网络服务，然后观察`online_do_something.service`的状态可以看到已经成功运行了。
 
-      ![offline](img\offline.png)
+      ![offline](img/offline.png)
 
    7. **如何通过systemd设置实现一个脚本在任何情况下被杀死之后会立即重新启动？实现杀不死？**
 
