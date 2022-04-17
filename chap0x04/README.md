@@ -37,6 +37,10 @@
 
 ## 实验解答
 
+代码具体执行情况可见我的[travis-ci](https://app.travis-ci.com/github/CUCCS/2022-linux-public-Lime-Cocoa)
+
+![](img/travis-ci.png)
+
 1. 用bash编写一个图片批处理脚本，实现以下功能：
 
    首先安装安装图像处理工具`imagemagick`，因为本次实验主要在`VSCode`中操作，所以就不需要在虚拟机中安装`shellcheck`，只需在`VSCode`中配置好相关插件即可。
