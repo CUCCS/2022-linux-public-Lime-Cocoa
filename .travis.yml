@@ -1,0 +1,49 @@
+language: bash
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y shellcheck
+  - sudo apt-get install imagemagick
+  - sudo apt-get install p7zip-full
+  - sudo apt-get install ghostscript
+  - ls -l
+script:
+  - wget "https://c4pr1c3.gitee.io/linuxsysadmin/exp/chap0x04/worldcupplayerinfo.tsv"
+  - wget "https://c4pr1c3.github.io/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
+  - 7z x -ot web_log.tsv.7z
+  - ls -l
+  - cd chap0x04/  
+  - cd shell/ 
+  - echo "==============Task1================"
+  - bash task1.sh -h
+  - bash task1.sh -q 50
+  - bash task1.sh -r 50%
+  - bash task1.sh -w 10 Deng
+  - bash task1.sh -p Deng
+  - bash task1.sh -s Deng
+  - bash task1.sh -t
+  - echo "==================================="
+  - echo "==============Task2================"
+  - bash task2.sh -h 
+  - bash task2.sh -a
+  - bash task2.sh -p 
+  - bash task2.sh -n 
+  - bash task2.sh -m 
+  - echo "==================================="
+  - echo "==============Task3================"
+  - bash task3.sh -h 
+  - bash task3.sh -t
+  - bash task3.sh -i 
+  - bash task3.sh -u 
+  - bash task3.sh -r 
+  - bash task3.sh -4 
+  - bash task3.sh -p /pub/winvn/readme.txt
+  - echo "==================================="
+  - shellcheck task1.sh
+  - echo "==================================="
+  - shellcheck task2.sh
+  - echo "==================================="
+  - shellcheck task3.sh
+  - echo "==================================="
+notifications:
+  email:
+    on_success: never
