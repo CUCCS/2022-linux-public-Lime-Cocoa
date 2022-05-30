@@ -93,7 +93,7 @@
           }
       ```
 
-      安装完成后，访问`192.168.109.132:8080/verynginx/index.html` 进入后台管理页面
+      安装完成后，访问`192.168.109.132/verynginx/index.html` 进入后台管理页面
 
       ![](img/verynginx.png)
 
